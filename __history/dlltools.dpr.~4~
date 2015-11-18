@@ -247,9 +247,9 @@ end;
 //在 (Xmm, Ymm)处按指定配置文件信息和字体输出字符串
 procedure PrintText(Txt: string;item:string;configfilename:string);stdcall;
 var
-//    OrX, OrY: Extended;
+    OrX, OrY: Extended;
     Px, Py,x,y: Integer;
-//    AP: TPoint;
+    AP: TPoint;
     Fn: TStrings;
     FileName: string;
     OffSetX, OffSetY: Integer;

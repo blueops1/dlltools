@@ -247,9 +247,9 @@ end;
 //在 (Xmm, Ymm)处按指定配置文件信息和字体输出字符串
 procedure PrintText(Txt: string;item:string;configfilename:string);stdcall;
 var
-//    OrX, OrY: Extended;
+    OrX, OrY: Extended;
     Px, Py,x,y: Integer;
-//    AP: TPoint;
+    AP: TPoint;
     Fn: TStrings;
     FileName: string;
     OffSetX, OffSetY: Integer;
@@ -437,23 +437,23 @@ GetOffSetX,
 //取得纸张的纵向偏移量-单位：点
 GetOffSetY,
 //毫米单位转换为英寸单位
-MmToInch,
+MmToInch(Length: Extended),
 //英寸单位转换为毫米单位
-InchToMm,
+InchToMm(Length: Extended),
 //取得水平方向每英寸打印机的点数
 HPointsPerInch,
 //取得纵向方向每英寸打印机的光栅数
 VPointsPerInch,
 //横向点单位转换为毫米单位
-XPointToMm,
+XPointToMm(Pos: Integer),
 //纵向点单位转换为毫米单位
-YPointToMm,
+YPointToMm(Pos: Integer),
 //设置纸张高度-单位：mm
-SetPaperHeight,
+SetPaperHeight(Value:integer),
 //设置纸张宽度：单位--mm
-SetPaperWidth,
+SetPaperWidth(Value:integer),
 //在 (Xmm, Ymm)处按指定配置文件信息和字体输出字符串
-PrintText,
+PrintText(Txt: string;item:string;configfilename:string),
 //小写金额转换为大写金额
 SmallTOBig;
 
